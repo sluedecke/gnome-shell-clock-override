@@ -69,7 +69,7 @@ const ClockOverrideSettings = new GObject.Class({
         this.attach(label2, 0, 1, 3, 1);
 
         var css = new Gtk.CssProvider();
-        css.load_from_data("GtkLabel { text-decoration: underline rgba(128, 128, 128, 0.3); }");
+        css.load_from_data("GtkLabel { text-decoration: underline rgba(128, 128, 128, 0.3); }", -1);
 
         var grid = this;
         var rownumber = 2;
